@@ -1,0 +1,75 @@
+.quote-container {
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+}
+
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.refresh-btn {
+  padding-top: 0.55vh;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.spinning {
+  animation: icon-spin 1400ms ease;
+}
+
+@keyframes icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .quote-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .quote-container {
+    gap: 4vw;
+  }
+
+  .quote-text {
+    gap: 1.5vh;
+  }
+
+  .refresh-btn {
+    padding-top: 0.85vh;
+  }
+
+  .refresh-btn img {
+    height: 15px;
+  }
+}

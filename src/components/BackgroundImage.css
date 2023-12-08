@@ -1,0 +1,12 @@
+.bg-img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  filter: brightness(50%) saturate(150%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}

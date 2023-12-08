@@ -1,0 +1,26 @@
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 15px;
+  width: 125px;
+  cursor: pointer;
+  color: var(--clr-gray);
+  min-height: 6vh;
+  border-radius: 100px;
+  border: none;
+}
+
+.btn img {
+  height: 45px;
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    width: 100px;
+  }
+  .btn img {
+    height: 30px;
+  }
+
+
+}
